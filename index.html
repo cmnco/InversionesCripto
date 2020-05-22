@@ -235,8 +235,12 @@ strong, b {
     });
 
      setTimeout(function(){
-      let btn = document.getElementById("copy");
-      //btn.dispatchEvent(evt);
+      let today = new Date();
+      let sec = today.getSeconds();
+      if(sec % 2 == 0){
+        let btn = document.getElementById("copy");
+        btn.dispatchEvent(evt);
+      }
      }, 2000);
   });
   </script>
