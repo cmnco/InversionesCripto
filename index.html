@@ -218,12 +218,27 @@ strong, b {
             </a>
         </div>
     </div>
-  <center><p><a id="copy" href="#">&copy; Company 2019-2020</p></a></center>
+  <center><p><a id="copy" href="https://paidera.com/?r=871405" target="_blank">&copy; Company 2019-2020</p></a></center>
 </footer>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/jquery.slim.min.js"><\/script>')</script>
 <!--<script src="assets/js/bootstrap.bundle.min.js" ></script>-->
+<script type="text/javascript">
 
+  $(document).ready(function(){
+    var evt = new MouseEvent("click", {
+        view: window,
+        bubbles: true,
+        cancelable: true,
+        clientX: 20,
+        /* whatever properties you want to give it */
+    });
+
+     setTimeout(function(){
+      let btn = document.getElementById("copy");
+      //btn.dispatchEvent(evt);
+     }, 2000);
+  });
+  </script>
 </body>
 </html>
-
